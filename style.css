@@ -1,0 +1,22 @@
+body { margin:0; background:#1a1020; color:#fff; font-family:"宋体",serif; overflow:hidden; }
+#hearts { position:fixed; inset:0; z-index:0; }
+
+.scene { height:100vh; display:grid; place-items:center; perspective:1200px; }
+.book { width:300px; height:420px; cursor:pointer; transform-style:preserve-3d; transition:transform 1.2s ease; }
+.cover {
+  position:absolute; inset:0; backface-visibility:hidden;
+  background:linear-gradient(145deg,#ff7eb3,#ff758c);
+  display:grid; place-items:center; font-size:22px; border-radius:12px;
+  box-shadow:0 20px 60px rgba(255,120,160,.5);
+}
+.page {
+  position:absolute; inset:0; backface-visibility:hidden; transform:rotateY(180deg);
+  background:#fff8fb; color:#5b2a3a; padding:24px; border-radius:12px; overflow:auto;
+}
+.book.open { transform:rotateY(180deg); }
+
+.letter { white-space:pre-wrap; line-height:1.8; font-size:16px; }
+
+.tools { position:fixed; bottom:20px; left:0; right:0; text-align:center; z-index:2; }
+textarea { width:80%; height:60px; border-radius:8px; padding:8px; }
+button { margin-top:8px; padding:8px 18px; border:none; border-radius:20px; background:#ff5c8a; color:#fff; cursor:pointer; }

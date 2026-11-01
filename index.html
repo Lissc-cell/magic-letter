@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>会开花的信</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="hearts"></canvas>
+
+  <div class="scene">
+    <div class="book" id="book">
+      <div class="cover">💌 致 你 的信</div>
+      <div class="page">
+        <div class="letter" id="letter"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tools">
+    <textarea id="input" placeholder="把信粘贴到这里…"></textarea><br/>
+    <input type="file" id="file" accept=".txt,.md" />
+    <button id="open">拆开信</button>
+  </div>
+
+  <script src="hearts.js"></script>
+  <script src="letter.js"></script>
+</body>
+</html>
